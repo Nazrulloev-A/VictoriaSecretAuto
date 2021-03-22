@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class MainPage {
+public class Task_2 {
 
     private WebDriver driver;
 
