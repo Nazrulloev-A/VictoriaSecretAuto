@@ -35,6 +35,8 @@ public class Task2 {
         homepage.getNewTab().hover();
         driver.close();
 
+        homepage.SelectSport().click();
+
     }
 
 }
