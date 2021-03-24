@@ -9,14 +9,14 @@ public class AddToBag {
 
     private WebDriver driver;
 
-    public AddToBag(WebDriver driver){
+    public AddToBag(WebDriver driver) {
         this.driver = driver;
     }
 
 
-    private String  addToBag = "//*[text()='Add to Bag']";
+    private String addToBag = "//*[text()='Add to Bag']";
 
-    public SelenideElement AddToBag(){
+    public SelenideElement AddToBag() {
         return $x(addToBag);
     }
 }

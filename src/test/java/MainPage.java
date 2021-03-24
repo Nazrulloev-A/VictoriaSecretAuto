@@ -18,10 +18,9 @@ public class MainPage {
         $x("//*[text()='Sport & Lounge']").click();  // done
 
 
-
         $x("//*[text()='Sport & Lounge']").waitUntil(Condition.appears, 6000); // pop up
 
-        if($("[id='heading-dialog-0']").is(Condition.appears)) { // dialog
+        if ($("[id='heading-dialog-0']").is(Condition.appears)) { // dialog
             $("[class='fabric-plain-button-element fix fabric-modal-utility-close-button']").click(); // dialog close button
         }
 
@@ -36,13 +35,12 @@ public class MainPage {
         $x("//*[text()='Color']").closest("button").click(); // colorB
 
 
-
         List<SelenideElement> listOfLingeries = $("[class='fabric-product-stacks-component']").$$("li");
 
         listOfLingeries.stream().filter(product -> product.scrollTo().text().contains("Stretch Fleece Front-zip Hoodie")).findFirst().get().click();
 
         $x("//*[text()='Add to Bag']").closest("button").scrollTo().click(); // addtobag
-        $x("//*[text()='Check Out']").waitUntil(Condition.appears,5000).closest("button").scrollTo().click();
+        $x("//*[text()='Check Out']").waitUntil(Condition.appears, 5000).closest("button").scrollTo().click();
         $("[class='fabric-primary-grey-button-element checkoutAsGuestButton']").click();
 
         double price = Double.parseDouble($("[class='fabric-h2-typography-element price']").text().replace("$", ""));

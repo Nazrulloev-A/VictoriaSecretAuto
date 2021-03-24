@@ -9,13 +9,13 @@ public class CheckOut {
 
     private WebDriver driver;
 
-    public CheckOut(WebDriver driver){
+    public CheckOut(WebDriver driver) {
         this.driver = driver;
     }
 
     private String CheckOut = "//*[text()='Check Out']";
 
-    public SelenideElement ChOut(){
+    public SelenideElement ChOut() {
         return $x(CheckOut);
     }
 }

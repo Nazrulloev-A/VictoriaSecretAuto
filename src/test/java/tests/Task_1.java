@@ -14,23 +14,26 @@ import pageObj.*;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class TestCases {
+public class Task_1 {
 
     private WebDriver driver;
     private HomePage homepage;
     private AddToBag addToBag;
     private CheckOut checkOut;
     private CheckOutAsGuest checkOutAsGuest;
-    private  HeaderText headerText;
+    private HeaderText headerText;
+    String baseUrl = "https://www.victoriassecret.com/us/";
+
 
     @BeforeTest
+
     public void setUp() {
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get("https://www.victoriassecret.com/us/");
+        driver.get(baseUrl);
 
 
         WebDriverRunner.setWebDriver(driver);
@@ -43,7 +46,7 @@ public class TestCases {
     }
 
     @org.testng.annotations.Test
-    public void validateHomePage(){
+    public void validateHomePage() {
 
         homepage.getNewTab().hover();
         homepage.SelectSport().click();
@@ -61,7 +64,7 @@ public class TestCases {
         listOfLingeries.stream().filter(product -> product.scrollTo().text().contains("Stretch Fleece Front-zip Hoodie"))
                 .findFirst().get().click();
         addToBag.AddToBag().closest("button").scrollTo().click();
-        checkOut.ChOut().waitUntil(Condition.appears,5000).closest("button").scrollTo().click();
+        checkOut.ChOut().waitUntil(Condition.appears, 5000).closest("button").scrollTo().click();
         checkOutAsGuest.asGuest().click();
         double price = Double.parseDouble(checkOutAsGuest.prize().text().replace("$", ""));
         System.out.println(price);
@@ -69,12 +72,6 @@ public class TestCases {
         Assert.assertTrue(54.50 == price);
         driver.close();
         driver.quit();
-
-
-
-
-
-
 
 
     }

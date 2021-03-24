@@ -11,11 +11,11 @@ public class Test1_GET_Request {
 
     @Test
 
-    public void getAllRequest(){
+    public void getAllRequest() {
 
         // Base URI
 
-        RestAssured.baseURI ="https://api.victoriassecret.com/settings/v1/languages?activeCountry=US";
+        RestAssured.baseURI = "https://api.victoriassecret.com/settings/v1/languages?activeCountry=US";
 
         // Request object
 
@@ -23,7 +23,7 @@ public class Test1_GET_Request {
 
         // Response object
 
-        Response response = httpRequest.request(Method.GET,"https://api.victoriassecret.com/settings/v1/languages?activeCountry=US");
+        Response response = httpRequest.request(Method.GET, "https://api.victoriassecret.com/settings/v1/languages?activeCountry=US");
 
         String responseBody = response.getBody().prettyPrint();
         //System.out.println("Response Body is: " + responseBody);
@@ -33,7 +33,7 @@ public class Test1_GET_Request {
 
         //statusCode Validation
 
-        Assert.assertEquals(statusCode,200);
+        Assert.assertEquals(statusCode, 200);
 
         String statusLine = response.getStatusLine();
         System.out.println(statusLine);

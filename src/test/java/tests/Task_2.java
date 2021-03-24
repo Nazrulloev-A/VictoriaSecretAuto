@@ -31,30 +31,29 @@ public class Task_2 {
     }
 
 
-   @org.testng.annotations.Test
-    public void validateWebElement(){
+    @org.testng.annotations.Test
+    public void validateWebElement() {
 
-       $x("//*[text()='NEW!']").shouldBe(Condition.visible).hover();
-       Assert.assertEquals("NEW!", $x("//*[text()='NEW!']").text());
+        $x("//*[text()='NEW!']").shouldBe(Condition.visible).hover();
+        Assert.assertEquals("NEW!", $x("//*[text()='NEW!']").text());
 
-       $x("//*[text()='Sport & Lounge']").shouldBe(Condition.visible).click();
-       Assert.assertEquals("Sport & Lounge", $x("//*[text()='Sport & Lounge']").text());
+        $x("//*[text()='Sport & Lounge']").shouldBe(Condition.visible).click();
+        Assert.assertEquals("Sport & Lounge", $x("//*[text()='Sport & Lounge']").text());
 
-       $x("//*[text()='Sport & Lounge']").waitUntil(Condition.appears, 6000);
+        $x("//*[text()='Sport & Lounge']").waitUntil(Condition.appears, 6000);
 
-       if($("[id='heading-dialog-0']").is(Condition.appears)) {
-           $("[class='fabric-plain-button-element fix fabric-modal-utility-close-button']").click();
-       }
+        if ($("[id='heading-dialog-0']").is(Condition.appears)) {
+            $("[class='fabric-plain-button-element fix fabric-modal-utility-close-button']").click();
+        }
 
-       $x("//*[text()='Size']").closest("button").shouldBe(Condition.visible).hover();
-       Assert.assertEquals("Size", $x("//*[text()='Size']").text());
+        $x("//*[text()='Size']").closest("button").shouldBe(Condition.visible).hover();
+        Assert.assertEquals("Size", $x("//*[text()='Size']").text());
 
-       driver.close();
-
-
+        driver.close();
 
 
     }
+
     @org.testng.annotations.Test
     public void validateWebElementNegative() {
 

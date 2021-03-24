@@ -9,18 +9,19 @@ public class CheckOutAsGuest {
 
     private WebDriver driver;
 
-    public CheckOutAsGuest (WebDriver driver){
+    public CheckOutAsGuest(WebDriver driver) {
         this.driver = driver;
     }
 
     private String checkOutAsGuest = "[class='fabric-primary-grey-button-element checkoutAsGuestButton']";
 
-    public SelenideElement asGuest(){
+    public SelenideElement asGuest() {
         return $(checkOutAsGuest);
     }
 
     private String price = "[class='fabric-h2-typography-element price']";
-    public SelenideElement prize(){
+
+    public SelenideElement prize() {
         return $(price);
     }
 }
