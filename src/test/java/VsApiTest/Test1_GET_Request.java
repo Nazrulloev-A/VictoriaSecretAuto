@@ -7,6 +7,9 @@ import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.hasItems;
+
 public class Test1_GET_Request {
 
     @Test
@@ -19,7 +22,7 @@ public class Test1_GET_Request {
 
         // Request object
 
-        RequestSpecification httpRequest = RestAssured.given();
+        RequestSpecification httpRequest = given();
 
         // Response object
 
@@ -41,5 +44,27 @@ public class Test1_GET_Request {
         Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
 
 
+    }
+
+    @Test
+
+    void test_02(){
+
+        given()
+                .get("https://api.victoriassecret.com/settings/v1/languages?activeCountry=US")
+                .then()
+                .statusCode(200)
+      .body("languageDescription",hasItems("English","French"));
+    }
+
+
+    @Test
+
+    void test03(){
+        given()
+                .get("https://api.victoriassecret.com/settings/v1/languages?activeCountry=US")
+                .then()
+                .statusCode(200)
+                .log().all();
     }
 }

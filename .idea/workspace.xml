@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="845a93bb-152a-4b42-b42c-854373d0a04d" name="Default Changelist" comment="API Test Added">
+    <list default="true" id="845a93bb-152a-4b42-b42c-854373d0a04d" name="Default Changelist" comment="driver.get(baseUrl) added.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Task_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/TestCases.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VsApiTest/Test1_GET_Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VsApiTest/Test1_GET_Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObj/CheckOutAsGuest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObj/CheckOutAsGuest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObj/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObj/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Task_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Task_2.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,15 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/Task_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="15">
               <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-              <folding>
-                <element signature="e#1017#1053#0" expanded="true" />
-                <element signature="e#1017#1053#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -40,6 +39,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/VsApiTest/Test1_GET_Request.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="674">
+              <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -70,11 +78,11 @@
         <option value="$PROJECT_DIR$/src/test/java/pageObj/CheckOutAsGuest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObj/HeaderText.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/VsApiTest/Test1_GET_Request.java" />
         <option value="$PROJECT_DIR$/src/test/java/Utilities/Driver.java" />
         <option value="$PROJECT_DIR$/src/test/java/Utilities/Properties.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TestCases.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/Task_1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/VsApiTest/Test1_GET_Request.java" />
       </list>
     </option>
   </component>
@@ -167,14 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="MainPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainPage" />
-      <module name="VictoriaSecretAuto" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Test1_GET_Request.test03">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -228,25 +229,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task_1.validateHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="VictoriaSecretAuto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Task_1" />
-      <option name="METHOD_NAME" value="validateHomePage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1_GET_Request.getAllRequest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Test1_GET_Request" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="VictoriaSecretAuto" />
       <extension name="coverage">
         <pattern>
@@ -256,7 +239,42 @@
       </extension>
       <option name="PACKAGE_NAME" value="VsApiTest" />
       <option name="MAIN_CLASS_NAME" value="VsApiTest.Test1_GET_Request" />
-      <option name="METHOD_NAME" value="getAllRequest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1_GET_Request.test03" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="VictoriaSecretAuto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="VsApiTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="VsApiTest" />
+      <option name="MAIN_CLASS_NAME" value="VsApiTest.Test1_GET_Request" />
+      <option name="METHOD_NAME" value="test03" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1_GET_Request.test_02" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="VictoriaSecretAuto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="VsApiTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="VsApiTest" />
+      <option name="MAIN_CLASS_NAME" value="VsApiTest.Test1_GET_Request" />
+      <option name="METHOD_NAME" value="test_02" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -266,11 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Test1_GET_Request.test03" />
+        <item itemvalue="TestNG.Test1_GET_Request.test_02" />
+        <item itemvalue="TestNG.Test1_GET_Request" />
         <item itemvalue="TestNG.Task_1" />
         <item itemvalue="TestNG.Task_1.Task1" />
-        <item itemvalue="TestNG.Test1_GET_Request.getAllRequest" />
-        <item itemvalue="TestNG.Task_1.validateHomePage" />
-        <item itemvalue="Application.MainPage" />
       </list>
     </recent_temporary>
   </component>
@@ -306,31 +324,17 @@
       <option name="project" value="LOCAL" />
       <updated>1616433351901</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="driver.get(baseUrl) added.">
+      <created>1616548027689</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616548027690</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test1_GET_Request_getAllRequest - 2021.03.22 at 13h 11m 52s.xml">
-      <configuration name="Test1_GET_Request.getAllRequest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Test1_GET_Request_getAllRequest - 2021.03.22 at 15h 08m 14s.xml">
-      <configuration name="Test1_GET_Request.getAllRequest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestCases - 2021.03.22 at 15h 09m 31s.xml">
-      <configuration name="TestCases" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestCases - 2021.03.23 at 17h 27m 08s.xml">
-      <configuration name="TestCases" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestCases - 2021.03.23 at 17h 28m 55s.xml">
-      <configuration name="TestCases" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestCases - 2021.03.23 at 17h 32m 06s.xml">
-      <configuration name="TestCases" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestCases - 2021.03.23 at 17h 33m 47s.xml">
-      <configuration name="TestCases" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestCases - 2021.03.23 at 17h 35m 54s.xml">
       <configuration name="TestCases" configurationId="TestNG" />
     </history-entry>
@@ -340,12 +344,33 @@
     <history-entry file="Task_1 - 2021.03.23 at 21h 02m 44s.xml">
       <configuration name="Task_1" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Task_1 - 2021.03.23 at 21h 05m 13s.xml">
+      <configuration name="Task_1" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_GET_Request_test_02 - 2021.03.24 at 23h 43m 50s.xml">
+      <configuration name="Test1_GET_Request.test_02" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_GET_Request - 2021.03.24 at 23h 44m 15s.xml">
+      <configuration name="Test1_GET_Request" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_GET_Request_test_02 - 2021.03.25 at 00h 06m 55s.xml">
+      <configuration name="Test1_GET_Request.test_02" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_GET_Request_test_02 - 2021.03.25 at 00h 12m 26s.xml">
+      <configuration name="Test1_GET_Request.test_02" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_GET_Request_test_02 - 2021.03.25 at 00h 14m 07s.xml">
+      <configuration name="Test1_GET_Request.test_02" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_GET_Request_test_02 - 2021.03.25 at 00h 15m 05s.xml">
+      <configuration name="Test1_GET_Request.test_02" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-158" width="1920" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12886049" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12992546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -359,9 +384,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.41753343" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.41718426" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32986626" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32919255" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32986626" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -420,7 +445,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value=" First Commit" />
     <MESSAGE value="API Test Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="API Test Added" />
+    <MESSAGE value="driver.get(baseUrl) added." />
+    <option name="LAST_COMMIT_MESSAGE" value="driver.get(baseUrl) added." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/Task_2.java">
@@ -499,13 +525,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Utilities/ConfigurationReader.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Utilities/Driver.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.1.0/testng-7.1.0.jar!/org/testng/SuiteRunnerWorker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -517,10 +536,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/VsApiTest/Test1_GET_Request.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Task_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+        <state relative-caret-position="15">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -531,24 +550,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Task_1.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.1.0/testng-7.1.0.jar!/org/testng/SuiteRunnerWorker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#1459#1483#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Task_1.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/VsApiTest/Test1_GET_Request.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="e#1017#1053#0" expanded="true" />
-            <element signature="e#1017#1053#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="674">
+          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
         </state>
       </provider>
     </entry>
